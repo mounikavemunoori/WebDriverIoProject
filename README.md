@@ -99,7 +99,7 @@ Please Select the below options while installing the webdriverIO
 ```
 npx wdio
 ```
-# Step 7: To Run the all tests cases below code in wdio.config.js
+# Step 7: To Run the all tests cases change below code in wdio.config.js
 Earlier it had below code
 ```
 require: ['./features/step-definitions/steps.js'],
