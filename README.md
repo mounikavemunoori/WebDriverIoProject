@@ -26,27 +26,27 @@ Please Select the below options while installing the webdriverIO
   ```
   A project named "Drectory name" was detected at "/Users/UserName/Desktop/checkWDIO", correct? (Y/n) 
   ```
-  # Option 2: Select "E2E Testing - of Web or Mobile Applications" for below option(type enter after selecting the option)
+  # Option 2: Select "E2E Testing - of Web or Mobile Applications" for below option(Press "Enter" key after selecting the option)
   ```
   What type of testing would you like to do?
   ```
-  # Option 3: Select "On my local machine" for below option(type enter after selecting the option)
+  # Option 3: Select "On my local machine" for below option(Press enter after selecting the option)
   ```
   Where is your automation backend located?
   ```
-  # option 4: Select "Web - web applications in the browser" for below option(type enter after selecting the option)
+  # option 4: Select "Web - web applications in the browser" for below option(Press "Enter" key after selecting the option)
   ```
   Which environment you would like to automate?
   ```
-  # option 5:  Select "Chrome" for below option(type 'Enter' key after selecting the option)
+  # option 5:  Select "Chrome" for below option(Press 'Enter' key after selecting the option)
   ```
   With which browser should we start?
   ```
-  # option 6: Select "Cucumber" for below option(type 'Enter' key after selecting the option)
+  # option 6: Select "Cucumber" for below option(Press 'Enter' key after selecting the option)
   ```
   Which framework do you want to use?
   ```
-  # option 7:  Select "No" for below option(type 'Enter' key after selecting the option)
+  # option 7:  Select "No" for below option(Press 'Enter' key after selecting the option)
   ```
   Do you want to use a compiler?
   ```
