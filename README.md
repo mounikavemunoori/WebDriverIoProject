@@ -8,6 +8,10 @@ node -v
 ## Step 2: Create a new project
 Create a new directory for your project and navigate to it in your terminal.
 
+# Step3: Clone the code from Repo then change directory use below command
+```
+cd WebDriverIoProject
+```
 ## Step 3: Initialize a new Node.js project use below command
 Run the following command to initialize a new Node.js project:
 ```
@@ -34,39 +38,39 @@ Please Select the below options while installing the webdriverIO
   ```
   Where is your automation backend located?
   ```
-  # option 4: Select "Web - web applications in the browser" for below option(Press "Enter" key after selecting the option)
+  # Option 4: Select "Web - web applications in the browser" for below option(Press "Enter" key after selecting the option)
   ```
   Which environment you would like to automate?
   ```
-  # option 5:  Select "Chrome" for below option(Press 'Enter' key after selecting the option)
+  # Option 5:  Select "Chrome" for below option(Press 'Enter' key after selecting the option)
   ```
   With which browser should we start?
   ```
-  # option 6: Select "Cucumber" for below option(Press 'Enter' key after selecting the option)
+  # Option 6: Select "Cucumber" for below option(Press 'Enter' key after selecting the option)
   ```
   Which framework do you want to use?
   ```
-  # option 7:  Select "No" for below option(Press 'Enter' key after selecting the option)
+  # Option 7:  Select "No" for below option(Press 'Enter' key after selecting the option)
   ```
   Do you want to use a compiler?
   ```
-  # option 8: Select "Y" for below option(press 'Enter' key after selecting the option)
+  # Option 8: Select "Y" for below option(press 'Enter' key after selecting the option)
   ```
   Do you want WebdriverIO to autogenerate some test files?
   ```
-  # option 9: Press "Enter" key  for below option
+  # Option 9: Press "Enter" key  for below option
   ```
   Where should these feature files be located?
   ```
-  # option 10: Press "Enter" key  for below option
+  # Option 10: Press "Enter" key  for below option
   ```
   Where should these step definitions be located?
   ```
-  # option 11: Select "y" for below option(press 'Enter' key after selecting the option)
+  # Option 11: Select "y" for below option(press 'Enter' key after selecting the option)
   ```
   Do you want to use page objects
   ```
-  # option 12: Press "Enter" key  for below option
+  # Option 12: Press "Enter" key  for below option
   ```
   Where are your page objects located?
   ```
@@ -74,19 +78,19 @@ Please Select the below options while installing the webdriverIO
   ```
   Which reporter do you want to use?
   ```
-  # option 14:  Select " wait-for" for below option (press 'Enter' key after selecting the option)
+  # Option 14:  Select " wait-for" for below option (press 'Enter' key after selecting the option)
   ```
   Do you want to add a plugin to your test setup?
   ``` 
-  # option 15: Select "chromedriver" for below option (press 'Enter' key after selecting the option)
+  # Option 15: Select "chromedriver" for below option (press 'Enter' key after selecting the option)
   ```
   Do you want to add a service to your test setup?
   ```
-  # option 16: Press "Enter" key  for below option
+  # Option 16: Press "Enter" key  for below option
   ```
   What is the base url?
   ```
-  # option 17: Select "y" for below option(press 'Enter' key after selecting the option)
+  # Option 17: Select "y" for below option(press 'Enter' key after selecting the option)
   It will install the all node modules required for webdriverIO
   ```
   Do you want me to run `npm install`
