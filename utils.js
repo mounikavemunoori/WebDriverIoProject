@@ -3,46 +3,45 @@
  * @param None
  * @returns {string}
  */
-
 export async function getPageTitle() {
-    return await browser.getTitle()
+  return await browser.getTitle()
 }
 
- /**
- * @Desc wait for element to be clickable and clicks on the element
- * @param {*} element - String or Webdriver IO Element
- * @param {*} value - value that is provided to the text box
- * @param {*} timeout - Default time out - browser.config.waitforTimeout
+/**
+* @Desc wait for element to be clickable and clicks on the element
+* @param {*} element - String or Webdriver IO Element
+* @param {*} value - value that is provided to the text box
+* @param {*} timeout - Default time out - browser.config.waitforTimeout
+*/
+export async function clickOnElement(element, timeout) {
+  try {
+    await element.waitForDisplayed({
+      timeout: timeout ? timeout : browser.config.waitforTimeout
+    })
+  } catch (err) { }
+  expect(await element.isDisplayed()).toEqual(true)
+  // await scrollIntoElementView(element)
+  // await browser.pause(10000)
+  await element.waitForClickable();
+  await element.click();
+
+}
+
+
+/**
+ * @Desc Gets the text of the elements
+ * @param elements
+ * @returns {*}
  */
- export async function clickOnElement(element, timeout) {
-    try {
-      await element.waitForDisplayed({
-        timeout: timeout ? timeout : browser.config.waitforTimeout
-      })
-    } catch (err) { }
-    expect(await element.isDisplayed()).toEqual(true)
-    // await scrollIntoElementView(element)
-    // await browser.pause(10000)
-    await element.waitForClickable();
-    await element.click();
-    
-  }
+export async function getTextOfElements(elements) {
+  return await elements.map(ele => ele.getText())
+}
 
-
-  /**
-   * @Desc Gets the text of the elements
-   * @param elements
-   * @returns {*}
-   */
-  export async function getTextOfElements(elements){
-    return await elements.map(ele=>ele.getText())
-  }
-
-  /**
-   * @Desc Gets the element text
-   * @param element
-   * @returns {Promise<string> | string}
-   */
+/**
+ * @Desc Gets the element text
+ * @param element
+ * @returns {Promise<string> | string}
+ */
 
 export async function getElementText(element) {
   return await element.getText()
@@ -55,9 +54,9 @@ export async function getElementText(element) {
  */
 export function isElementDisplayed(element) {
   try {
-      return element.isDisplayed();
+    return element.isDisplayed();
   } catch (e) {
-      return false;
+    return false;
   }
 }
 
@@ -99,7 +98,7 @@ export async function scrollIntoElementView(element) {
 }
 
 // Utility method to maximize the window
-export async function maximizeWindow () {
+export async function maximizeWindow() {
   await browser.maximizeWindow();
 };
 
@@ -143,7 +142,7 @@ export async function switchToNewWindowById(windowIds) {
   //Currently not clear what we can do about new browser tab/window failing to open.
   //If this pattern continues, we will add retries to such tests
   if (newWindows.length < 1) {
-      throw new Error('New browser tab failed to open or detect');
+    throw new Error('New browser tab failed to open or detect');
   }
   await browser.switchToWindow(newWindows[0]);
 }
