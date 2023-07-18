@@ -8,16 +8,16 @@ node -v
 ## Step 2: Create a new project
 Create a new directory for your project and navigate to it in your terminal.
 
-# Step3: Clone the code from Repo then change directory use below command
+## Step3: Clone the code from Repo then change directory use below command
 ```
 cd WebDriverIoProject
 ```
-## Step 3: Initialize a new Node.js project use below command
+## Step 4: Initialize a new Node.js project use below command
 Run the following command to initialize a new Node.js project:
 ```
 npm init -y
 ```
-## Step 4 : Initiate a WebdriverIO Setup
+## Step 5: Initiate a WebdriverIO Setup
 Run the following command to initiate the webdriverio set up
 ```
 npm init wdio .
@@ -95,11 +95,11 @@ Please Select the below options while installing the webdriverIO
   ```
   Do you want me to run `npm install`
   ```
-# Step 5: Run all tests use below command
+## Step 6: Run all tests use below command
 ```
 npx wdio
 ```
-# Step 6: To Run the all tests cases below code in wdio.config.js
+## Step 7: To Run the all tests cases below code in wdio.config.js
 Earlier it had below code
 ```
 require: ['./features/step-definitions/steps.js'],
@@ -110,7 +110,7 @@ require: ['./features/step-definitions/*.js'],
 ```
 it will help to run all the test cases because earlier it got hardcoded 
 
-# Step 6: Run the specific feacture file run below command
+## Step 8: Run the specific feacture file run below command
 ```
 npx wdio --spec ./features/bendigoCreditCards.feature
 ```
