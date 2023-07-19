@@ -1,5 +1,6 @@
+@Regression
 Feature: Apply for Bendigo Bright Credit Card
-
+    @Regression @Sanity @Smoke @CreditCard
     Scenario: Applying for Bendigo Bright Credit Card
         Given User navigates to the Bendigo Bank website
         When User clicks on "banking" option at header
