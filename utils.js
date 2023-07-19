@@ -134,7 +134,6 @@ export async function getMultipleWindows() {
  */
 export async function switchToNewWindowById(windowIds) {
   const currentWindows = await browser.getWindowHandles();
-  console.log("helllll", currentWindows)
   const newWindows = currentWindows.filter(x => !windowIds.includes(x));
 
   //Currently not clear what we can do about new browser tab/window failing to open.
