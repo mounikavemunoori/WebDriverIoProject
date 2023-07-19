@@ -124,14 +124,13 @@ export const config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',
-    [
-      'cucumberjs-json',
-      {
-        jsonFolder: './reports/json',
-        language: 'en',
-      },
-    ],
-  ],
+    ['junit', {
+        outputDir: './Reports/junit-html/',
+        outputFileFormat: function(options) { // optional
+            return `results-Results.xml`
+        }
+    }]
+],
     
 
     //

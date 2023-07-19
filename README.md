@@ -114,3 +114,21 @@ it will help to run all the test cases because earlier it got hardcoded
 ```
 npx wdio --spec ./features/bendigoCreditCards.feature
 ```
+
+# Step 9 : To Generate the reports run below command
+```
+npm install @wdio/junit-reporter --save-dev
+```
+
+# Step 10: Need to change the wdio.config.js with below piece of code in reports config section
+```
+reporters: ['spec',
+    ['junit', {
+        outputDir: './Reports/junit-html/',
+        outputFileFormat: function(options) { // optional
+            return `results-Results.xml`
+        }
+    }]
+```
+
+Reports will be stored in the REPORTS folder 
