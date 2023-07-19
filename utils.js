@@ -20,8 +20,6 @@ export async function clickOnElement(element, timeout) {
     })
   } catch (err) { }
   expect(await element.isDisplayed()).toEqual(true)
-  // await scrollIntoElementView(element)
-  // await browser.pause(10000)
   await element.waitForClickable();
   await element.click();
 
